@@ -10,7 +10,7 @@
     >
 
     <LinearLayout
-        android:background="@drawable/bgimage"
+        android:background="@drawable/bgimagemin"
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:orientation="vertical">
@@ -39,10 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            app:civ_border_width="10dp"
+        <ImageView
             android:layout_marginTop="60dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/ic_logo"
             android:layout_width="match_parent"
             android:layout_height="140dp" />
 
@@ -55,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v4.widget.DrawerLayout
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -89,10 +88,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </LinearLayout>
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:padding="10sp"
                         android:layout_marginStart="-50sp"
-                        app:civ_border_width="10dp"
                         android:layout_marginTop="2dp"
                         android:src="@drawable/ic_person_black_24dp"
                         android:layout_width="50dp"
@@ -106,10 +104,10 @@
                 android:layout_marginEnd="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    app:civ_border_width="10dp"
+                <ImageView
+
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/logo"
+                    android:src="@drawable/ic_logo"
                     android:layout_width="50dp"
                     android:layout_height="50dp" />
                 <LinearLayout
@@ -134,20 +132,11 @@
 
 
 
-        </android.support.v4.widget.DrawerLayout>
+        </android.support.v4.widget.NestedScrollView>
 
 
 
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            app:backgroundTint="#EA4B46"
-            app:fabSize="mini"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/ic_camera_black_24dp" />
     </android.support.design.widget.CoordinatorLayout>
 
 
